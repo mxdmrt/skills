@@ -32,12 +32,19 @@ npx skills@latest add mxdmrt/skills/what-to-learn-next
 npx skills@latest add mxdmrt/skills/make-sense-of-it
 ```
 
+5. **ready-for-refinement** — Turn discovery outputs into a refinement-ready problem brief and optional story format by verifying the evidence, assumptions, boundaries, and risks before backlog work starts.
+
+```bash
+npx skills@latest add mxdmrt/skills/ready-for-refinement
+```
+
 ## When To Use Which Skill
 
 - Use **challenge-me** when the idea is still vague and needs pressure-testing before it turns into a solution.
 - Use **who-needs-this** when a brief, concept, story, or screenshot already exists and may be framing the wrong problem.
 - Use **what-to-learn-next** when the problem is clearer than the evidence and you need a concrete validation plan.
 - Use **make-sense-of-it** when you already have raw research inputs and need structured synthesis without false certainty.
+- Use **ready-for-refinement** when discovery has produced enough signal that you need a clean, evidence-backed handoff into backlog refinement.
 
 ## Repository Structure
 
@@ -45,3 +52,4 @@ npx skills@latest add mxdmrt/skills/make-sense-of-it
 - `who-needs-this/` — Reframe solution-biased artifacts around the underlying problem.
 - `what-to-learn-next/` — Plan discovery work around the most decision-critical unknowns.
 - `make-sense-of-it/` — Synthesize research inputs into evidence-backed insights and next steps.
+- `ready-for-refinement/` — Verify that discovery outputs are strong enough to become a refinement-ready brief or story.
