@@ -14,6 +14,13 @@ These skills help pressure-test ideas before they turn into designs, specs, or c
 npx skills@latest add mxdmrt/skills/challenge-me
 ```
 
+- **who-needs-this** — Challenge briefs, stories, concepts, and screenshots to find the real problem when an artifact looks solution-biased and needs evidence, assumptions, and framing pulled apart before ideation.
+
+```bash
+npx skills@latest add mxdmrt/skills/who-needs-this
+```
+
 ## Repository Structure
 
 - `challenge-me/` — Skill definition and instructions
+- `who-needs-this/` — Skill definition and instructions
