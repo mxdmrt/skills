@@ -4,52 +4,46 @@ A small collection of portable agent skills for discovery, research, and product
 
 Each skill lives in its own directory and can be installed individually.
 
-## Discovery Flow
+## Lean Discovery Flow
 
-These skills are designed to help in the problem space before ideas harden into designs, specs, or code.
+These skills are designed to keep discovery lean: investigate first, learn from evidence, then hand off only when the user explicitly chooses to move into design or delivery.
 
-1. **challenge-me** — Stress-test a product idea, user story, or UX direction with direct questions about the problem, evidence, tradeoffs, risks, accessibility, and what should be validated first.
+1. **challenge-me** — Stress-test product ideas, user stories, concepts, change requests, briefs, screenshots, and early design thinking. Use it to identify who has the problem, separate facts from guesses, reframe solution-biased requests, and clarify whether the conversation is about a real user need, business request, or speculative idea.
 
 ```bash
 npx skills@latest add mxdmrt/skills/challenge-me
 ```
 
-2. **who-needs-this** — Challenge briefs, stories, concepts, and screenshots to find the real problem when an artifact looks solution-biased and needs evidence, assumptions, and framing pulled apart before ideation.
+2. **learn-from-evidence** — Plan what to learn next and synthesize messy research inputs without over-claiming. Use it for notes, interviews, screenshots, observations, findings, learning plans, evidence gaps, patterns, contradictions, and confidence limits.
 
 ```bash
-npx skills@latest add mxdmrt/skills/who-needs-this
+npx skills@latest add mxdmrt/skills/learn-from-evidence
 ```
 
-3. **what-to-learn-next** — Turn a reframed problem into a focused discovery and validation plan by identifying the riskiest unknowns, the right evidence sources, and the fastest method to learn what matters.
+3. **write-design-brief** — Turn clarified discovery into a design-facing brief with problem framing, user context, evidence, assumptions, constraints, exploration directions, and open questions.
 
 ```bash
-npx skills@latest add mxdmrt/skills/what-to-learn-next
+npx skills@latest add mxdmrt/skills/write-design-brief
 ```
 
-4. **make-sense-of-it** — Synthesize research notes, transcripts, screenshots, and observations into evidence-backed insights, confidence levels, tensions, and next decisions without over-claiming.
+4. **write-delivery-issue** — Turn clarified discovery into a tool-agnostic backlog issue for engineering refinement, compatible with Jira, Linear, GitHub Issues, or any similar tool.
 
 ```bash
-npx skills@latest add mxdmrt/skills/make-sense-of-it
-```
-
-5. **ready-for-refinement** — Turn discovery outputs into a refinement-ready problem brief and optional story format by verifying the evidence, assumptions, boundaries, and risks before backlog work starts.
-
-```bash
-npx skills@latest add mxdmrt/skills/ready-for-refinement
+npx skills@latest add mxdmrt/skills/write-delivery-issue
 ```
 
 ## When To Use Which Skill
 
-- Use **challenge-me** when the idea is still vague and needs pressure-testing before it turns into a solution.
-- Use **who-needs-this** when a brief, concept, story, or screenshot already exists and may be framing the wrong problem.
-- Use **what-to-learn-next** when the problem is clearer than the evidence and you need a concrete validation plan.
-- Use **make-sense-of-it** when you already have raw research inputs and need structured synthesis without false certainty.
-- Use **ready-for-refinement** when discovery has produced enough signal that you need a clean, evidence-backed handoff into backlog refinement.
+- Use **challenge-me** when an idea, feature, change request, user story, concept, or artifact needs pressure-testing before it turns into a solution.
+- Use **learn-from-evidence** when you need to plan validation or synthesize raw notes, interviews, observations, screenshots, or findings into evidence-backed learning.
+- Use **write-design-brief** only when the user explicitly asks to turn clarified discovery into a design-facing handoff.
+- Use **write-delivery-issue** only when the user explicitly asks to turn clarified discovery into a refinement-ready backlog issue.
 
-## Repository Structure
+The handoff skills should preserve uncertainty. If the discovery is too weak, they should say what is missing before drafting.
 
-- `challenge-me/` — Challenge early ideas and UX directions.
-- `who-needs-this/` — Reframe solution-biased artifacts around the underlying problem.
-- `what-to-learn-next/` — Plan discovery work around the most decision-critical unknowns.
-- `make-sense-of-it/` — Synthesize research inputs into evidence-backed insights and next steps.
-- `ready-for-refinement/` — Verify that discovery outputs are strong enough to become a refinement-ready brief or story.
+## Lean Discovery Skill Directories
+
+- `challenge-me/` — Challenge early ideas, solution-biased requests, and UX directions.
+- `learn-from-evidence/` — Plan discovery work and synthesize evidence-backed insights.
+- `write-design-brief/` — Draft design-facing briefs from clarified discovery.
+- `write-delivery-issue/` — Draft tool-agnostic delivery issues from clarified discovery.
