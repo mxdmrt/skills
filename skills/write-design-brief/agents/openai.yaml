@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Design Brief"
+  short_description: "Draft design briefs from discovery"
+  default_prompt: "Use $write-design-brief to turn this clarified discovery into a design-facing brief."

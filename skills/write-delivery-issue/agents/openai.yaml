@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Delivery Issue"
+  short_description: "Draft delivery issues from discovery"
+  default_prompt: "Use $write-delivery-issue to turn this clarified discovery into a refinement-ready backlog issue."

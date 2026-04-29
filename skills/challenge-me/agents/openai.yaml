@@ -1,0 +1,4 @@
+interface:
+  display_name: "Challenge Me"
+  short_description: "Stress-test UX ideas before design"
+  default_prompt: "Use $challenge-me to stress-test this UX idea before design."

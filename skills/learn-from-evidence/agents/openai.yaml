@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learn from Evidence"
+  short_description: "Plan and synthesize discovery evidence"
+  default_prompt: "Use $learn-from-evidence to synthesize these research notes and identify what to learn next."
