@@ -2,7 +2,7 @@
 
 A small collection of portable agent skills for discovery, research, and product thinking before implementation.
 
-Each skill lives in its own directory and can be installed individually.
+Each skill lives in its own directory under `skills/` and can be installed individually.
 
 ## Lean Discovery Flow
 
@@ -11,25 +11,25 @@ These skills are designed to keep discovery lean: investigate first, learn from 
 1. **challenge-me** — Stress-test product ideas, user stories, concepts, change requests, briefs, screenshots, and early design thinking. Use it to identify who has the problem, separate facts from guesses, reframe solution-biased requests, and clarify whether the conversation is about a real user need, business request, or speculative idea.
 
 ```bash
-npx skills@latest add mxdmrt/skills/challenge-me
+npx skills@latest add mxdmrt/skills --skill challenge-me
 ```
 
 2. **learn-from-evidence** — Plan what to learn next and synthesize messy research inputs without over-claiming. Use it for notes, interviews, screenshots, observations, findings, learning plans, evidence gaps, patterns, contradictions, and confidence limits.
 
 ```bash
-npx skills@latest add mxdmrt/skills/learn-from-evidence
+npx skills@latest add mxdmrt/skills --skill learn-from-evidence
 ```
 
 3. **write-design-brief** — Turn clarified discovery into a design-facing brief with problem framing, user context, evidence, assumptions, constraints, exploration directions, and open questions.
 
 ```bash
-npx skills@latest add mxdmrt/skills/write-design-brief
+npx skills@latest add mxdmrt/skills --skill write-design-brief
 ```
 
 4. **write-delivery-issue** — Turn clarified discovery into a tool-agnostic backlog issue for engineering refinement, compatible with Jira, Linear, GitHub Issues, or any similar tool.
 
 ```bash
-npx skills@latest add mxdmrt/skills/write-delivery-issue
+npx skills@latest add mxdmrt/skills --skill write-delivery-issue
 ```
 
 ## When To Use Which Skill
